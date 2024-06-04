@@ -9,7 +9,7 @@ authors=[{name = "Mozilla Corporation", email="fx-data-dev@mozilla.org"}]
 description="Markov Chains for deriving User Lifetime Value (LTV)"
 requires-python=">=3.10"
 dependencies=[
-  "wheel==0.37.1", # to insure we can build grcpio
+  "wheel==0.38.1", # to insure we can build grcpio
   "black==22.8.0",
   "Jinja2==3.1.2",
   "google-cloud-bigquery==3.13.0",
