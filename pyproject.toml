@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name= "markov-chain-ltv"
+dynamic = ["version"]
+authors=[{name = "Mozilla Corporation", email="fx-data-dev@mozilla.org"}]
+description="Markov Chains for deriving User Lifetime Value (LTV)"
+requires-python=">=3.10"
+dependencies=[
+  "wheel==0.37.1", # to insure we can build grcpio
+  "black==22.8.0",
+  "Jinja2==3.1.2",
+  "google-cloud-bigquery==3.13.0",
+  "jupyter==1.0.0",
+  "matplotlib==3.6.0",
+  "metaflow==2.11.0",
+  "numpy==1.26.2", # in case we want to use numba at some point
+  "pandas==1.5.0",
+  "pandas-gbq==0.19.1",
+  "pylint==3.0.3",
+  "pytest==7.1.3",
+  "scikit-learn==1.2.0",
+  "scipy==1.11.3",
+  "seaborn==0.12.0",
+  "db-dtypes==1.0.5",
+]
+readme = "README.md"
